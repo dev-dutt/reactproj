@@ -2,13 +2,15 @@ import { useEffect,useState } from "react";
 
 function App() {
 
-  let [counter,setcounter]=useState(19);
+  let [counter,setcounter]=useState(11);
   // let counter = 5;
 
   function addvalue(){
     // counter = counter+1;
     if(counter<20){
       setcounter(counter+1);
+      setcounter(prevcounter =>prevcounter+1);
+      setcounter(prevcounter =>prevcounter+1);
       console.log('add',counter);
     }
     
